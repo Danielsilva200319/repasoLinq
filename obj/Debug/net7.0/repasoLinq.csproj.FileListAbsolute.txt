@@ -1,0 +1,14 @@
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\bin\Debug\net7.0\repasoLinq.exe
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\bin\Debug\net7.0\repasoLinq.deps.json
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\bin\Debug\net7.0\repasoLinq.runtimeconfig.json
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\bin\Debug\net7.0\repasoLinq.dll
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\bin\Debug\net7.0\repasoLinq.pdb
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\repasoLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\repasoLinq.AssemblyInfoInputs.cache
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\repasoLinq.AssemblyInfo.cs
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\repasoLinq.csproj.CoreCompileInputs.cache
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\repasoLinq.dll
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\refint\repasoLinq.dll
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\repasoLinq.pdb
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\repasoLinq.genruntimeconfig.cache
+C:\Users\APM02-63\Desktop\netcore\repasoLinq\obj\Debug\net7.0\ref\repasoLinq.dll
