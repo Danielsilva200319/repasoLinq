@@ -30,5 +30,15 @@ namespace repasoLinq.Clases
                 Console.WriteLine($"Id: {item.Id}   -->  Name: {item.Name}");
             }
         }
+        public void PrintDataV3()
+        {
+            var result = _student.Where((s,i) => 
+            {
+                if(i % 2 == 0)
+                    return true;
+                return false;
+            }).ToList();
+            result.ForEach(rs => Console.WriteLine($"{rs.Name}"));
+        }
     }
 }
