@@ -31,6 +31,7 @@ namespace repasoLinq.Clases
         public void Query()
         {
             Console.WriteLine($"Ingrese el criterio de busqueda: ");
+            
             var criterio = Console.ReadLine();
             var expre = from x in libros where x.Contains(criterio) select x;
             foreach (string item in expre)
