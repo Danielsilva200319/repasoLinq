@@ -20,5 +20,15 @@ namespace repasoLinq.Clases
             var teenPerson = _student.Where(s => s.Age > 12 && s.Age < 20).ToList<Student>();
             teenPerson.ForEach(tp => Console.WriteLine($"{tp.Name}"));
         }
+        public void PrintDataQuery()
+        {
+            var teenAgerStudent = (from s in _student 
+                                            where s.Age > 12 && s.Age <= 30 
+                                            select new { s.Id, s.Name });
+            foreach (var item in teenAgerStudent)
+            {
+                Console.WriteLine($"Id: {item.Id}   -->  Name: {item.Name}");
+            }
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace repasoLinq.Clases
             {
                 Console.WriteLine($"Se encontro: {item}");
             }
+            Console.ReadKey();
         }
         public void Query()
         {
