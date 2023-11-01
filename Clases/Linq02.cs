@@ -40,23 +40,23 @@ namespace repasoLinq.Clases
             }).ToList();
             result.ForEach(rs => Console.WriteLine($"{rs.Name}"));
         }
-        public void OrderBy()
+        public List<Student> Order(char typeOrder)
         {
-            Console.WriteLine("1.Orden Descendente\n2.Orden Ascendente");
-            Console.Write("Seleccione una opción: ");
-            string opcion = Console.ReadLine();
-            if (opcion == "1")
+            List<Student> result;
+            Console.Write("");
+            switch (typeOrder)
             {
-                var resultOrder = _student.OrderByDescending(s => s.Name);
+                case 'A':
+                    result = _student.OrderBy(s => s.Name).ToList();
+                    break;
+                case 'B':
+                    result = _student.OrderByDescending(s => s.Name).ToList();
+                    break;
+                default:
+                    Console.WriteLine($"No se especifico el tipo de ordenamiento valido");
+                    return result = new List<Student>();
             }
-            else if (opcion == "2")
-            {
-                var resultOrder = _student.OrderBy(s => s.Name);
-            }
-            else
-            {
-                Console.Write("Error Opcion invalida");
-            }
+            return result;
         }
     }
 }
