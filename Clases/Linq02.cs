@@ -12,8 +12,8 @@ namespace repasoLinq.Clases
         List<Student> _student = new List<Student>()
         {
             new Student(){Id = 123,Name = "Iron Man",Age = 18},
-            new Student(){Id = 124,Name = "Iron Man",Age = 19},
-            new Student(){Id = 125,Name = "Iron Man",Age = 17}
+            new Student(){Id = 124,Name = "Steve",Age = 19},
+            new Student(){Id = 125,Name = "Bill",Age = 17}
         };
         public void PrintData()
         {
@@ -39,6 +39,24 @@ namespace repasoLinq.Clases
                 return false;
             }).ToList();
             result.ForEach(rs => Console.WriteLine($"{rs.Name}"));
+        }
+        public void OrderBy()
+        {
+            Console.WriteLine("1.Orden Descendente\n2.Orden Ascendente");
+            Console.Write("Seleccione una opción: ");
+            string opcion = Console.ReadLine();
+            if (opcion == "1")
+            {
+                var resultOrder = _student.OrderByDescending(s => s.Name);
+            }
+            else if (opcion == "2")
+            {
+                var resultOrder = _student.OrderBy(s => s.Name);
+            }
+            else
+            {
+                Console.Write("Error Opcion invalida");
+            }
         }
     }
 }
