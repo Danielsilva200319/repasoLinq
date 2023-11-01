@@ -15,6 +15,12 @@ namespace repasoLinq.Clases
             new Student(){Id = 124,Name = "Steve",Age = 19},
             new Student(){Id = 125,Name = "Bill",Age = 17}
         };
+        List<Standar> _standar = new List<Standar>()
+        {
+            new Standar(){Id = 123,Name = "Iron Man"},
+            new Standar(){Id = 124,Name = "Steve"},
+            new Standar(){Id = 125,Name = "Bill"}
+        };
         public void PrintData()
         {
             var teenPerson = _student.Where(s => s.Age > 12 && s.Age < 20).ToList<Student>();
@@ -57,6 +63,18 @@ namespace repasoLinq.Clases
                     return result = new List<Student>();
             }
             return result;
+        }
+        public void InnerJoin()
+        {
+            var innerJoin = _student.Join(
+                                _standar,
+                                student => student.Id,
+                                standar => standar.Id,
+                                (student,standar) => new
+                                            {
+                                                StudentName = student.Name,
+                                                StandarName = standar.Name
+                                            });
         }
     }
 }

@@ -2,14 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic;
 
 namespace repasoLinq.Clases
 {
-    public class Student
+    public class Standar
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Age { get; set; }
-        public ICollection<Standar> Standars { get; set; }
     }
 }

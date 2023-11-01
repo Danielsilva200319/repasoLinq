@@ -7,7 +7,5 @@ internal class Program
         /* Linq01 repasoLinq01 = new Linq01();
         repasoLinq01.PrintData();
         repasoLinq01.Query(); */
-        Linq02 repasoLinq = new Linq02();
-        repasoLinq.OrderBy();
     }
 }
